@@ -42,12 +42,12 @@ int main() {
 
     printf("s: ");
     print_as_bin(s);
-    printf(" u: ");
+    printf("\t\tu: ");
     print_as_bin(u);
     printf("\n");
 
-    printf("s as hhx: %hhx u as hhx: %hhx\n", s, u);
-    printf("s as x: %x u as x: %x\n", s, u);
+    printf("s as hhx: %hhx\t\tu as hhx: %hhx\n", s, u);
+    printf("s as x: %x\tu as x: %x\n", s, u);
 
     printf("s < 127: %d u < 127: %d\n", s > 127, u > 127);
 
