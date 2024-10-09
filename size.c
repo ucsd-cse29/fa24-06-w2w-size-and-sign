@@ -1,6 +1,14 @@
 #include <stdint.h>
 #include <stdio.h>
 
+void print_as_bin(char c) {
+    for(int place = 128; place > 0; place /= 2) {
+        if((c & place) == 0) printf("0");
+        else printf("1");
+    }
+}
+
+
 int main() {   
     printf("%ld\n", sizeof(char));
 
@@ -28,5 +36,17 @@ int main() {
     printf("sizeof(c + 1): %ld\n", sizeof(c + 1));
     printf("sizeof(c2): %ld\n", sizeof(c2));
 
+
+    char s = 200;
+    unsigned char u = 200;
+
+    printf("s: ");
+    print_as_bin(s);
+    printf(" u: ");
+    print_as_bin(u);
+    printf("\n");
+
+    printf("s: %hhx u: %hhx\n", s, u);
+    printf("s < 127: %d u < 127: %d\n", s > 127, u > 127);
 
 }
