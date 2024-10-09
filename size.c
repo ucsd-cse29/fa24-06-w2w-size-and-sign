@@ -18,13 +18,11 @@ int main() {
     printf("sizeof(int16_t): %ld\n", sizeof(int16_t));
     printf("sizeof(uint16_t): %ld\n", sizeof(uint16_t));
 
-    printf("%ld\n", sizeof(int32_t));
-    printf("%ld\n", sizeof(uint32_t));
+    printf("sizeof(int32_t): %ld\n", sizeof(int32_t));
 
-    printf("%ld\n", sizeof(int64_t));
-    printf("%ld\n", sizeof(int64_t));
+    printf("sizeof(int64_t): %ld\n", sizeof(int64_t));
 
-    printf("%ld\n", sizeof(int));
+    printf("sizeof(int): %ld\n", sizeof(int));
 
     char c = 128;
     int32_t i = 32;
