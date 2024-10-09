@@ -10,13 +10,13 @@ void print_as_bin(char c) {
 
 
 int main() {   
-    printf("%ld\n", sizeof(char));
+    printf("sizeof(char): %ld\n", sizeof(char));
 
-    printf("%ld\n", sizeof(int8_t));
-    printf("%ld\n", sizeof(uint8_t));
+    printf("sizeof(int8_t): %ld\n", sizeof(int8_t));
+    printf("sizeof(uint8_t): %ld\n", sizeof(uint8_t));
 
-    printf("%ld\n", sizeof(int16_t));
-    printf("%ld\n", sizeof(uint16_t));
+    printf("sizeof(int16_t): %ld\n", sizeof(int16_t));
+    printf("sizeof(uint16_t): %ld\n", sizeof(uint16_t));
 
     printf("%ld\n", sizeof(int32_t));
     printf("%ld\n", sizeof(uint32_t));
@@ -46,7 +46,9 @@ int main() {
     print_as_bin(u);
     printf("\n");
 
-    printf("s: %hhx u: %hhx\n", s, u);
+    printf("s as hhx: %hhx u as hhx: %hhx\n", s, u);
+    printf("s as x: %x u as x: %x\n", s, u);
+
     printf("s < 127: %d u < 127: %d\n", s > 127, u > 127);
 
 }
